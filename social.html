@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social media</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main row">
+        <header>
+            <nav class="navbar ">
+                <div class="lnav">
+                    <h1 title="Blog-site" id="reload">
+                        <i class="fa-solid fa-blog"></i>
+                        <span>Blog</span>
+                    </h1>
+                    <div>
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                </div>
+                <div class="rnav">
+
+                    <div class="serch">
+                        <input type="text" placeholder="Search">
+                        <button>Search</button>
+                    </div>
+
+
+                    <img src="image/magdi1.jpg" alt="" title="My account">
+                </div>
+
+            </nav>
+        </header>
+
+
+        <div class="lside col-3">
+            <div class="block1">
+                <div class="b-top">
+                    <h2 onclick="prof()" style="cursor: pointer;">My Profile</h2>
+                    <img src="image/magdi1.jpg" onclick="prof()" alt="">
+                </div>
+                <div class="b-botton">
+                    <div><i class="fa-solid fa-pen"></i> <span>Designer, UI</span></div>
+                    <div><i class="fa-solid fa-house"></i> <span> El-mehala, EGY</span></div>
+                    <div><i class="fa-solid fa-cake-candles"></i><span> April 1, 2000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block2">
+                <div id="groub" onclick="show()"> <i class="fa-solid fa-people-group"></i>
+                    <p>My Groube</p>
+                </div>
+                <div id="t-gr" style="display:none;" class="t-gr">
+                    <div><i class="fa-solid fa-circle-user"></i><span>ahmed saleh</span></div>
+                    <div><i class="fa-solid fa-circle-user"></i><span>fawzy khafagy</span></div>
+                    <div><i class="fa-solid fa-circle-user"></i><span>hazo gaber</span></div>
+                </div>
+                <div id="event" onclick="sho()"> <i class="fa-solid fa-calendar-check"></i>
+                    <p>My Events</p>
+                </div>
+                <div id="t-ev" style="display:none;" class="t-gr">
+                    <div><i class="fa-solid fa-graduation-cap"></i><span>Graduation</span></div>
+                    <div><i class="fa-solid fa-thumbtack"></i><span>Notes</span></div>
+                    <div><i class="fa-solid fa-plane"></i><span>Jurney</span></div>
+                    <div><i class="fa-solid fa-trophy"></i><span>winner</span></div>
+                </div>
+                <div id="b-photo" onclick="shm()"> <i class="fa-solid fa-image"></i>
+                    <p>My Photo</p>
+                </div>
+                <div id="t-ph" style="display:none;" class="t-gr">
+                    <img src="image/magdi.jpeg" alt="">
+                    <img src="image/magdi1.jpg" alt="">
+                    <img src="image/magdi4.jpg" alt="">
+                    <img src="image/magdi3.jpg" alt="">
+                    <img src="image/magdi4.jpg" alt="">
+                    <img src="image/magdi5.jpg" alt="">
+                    <img src="image/magdi.jpeg" alt="">
+                    <img src="image/magdi1.jpg" alt="">
+                    <img src="image/magdi6.jpg" alt="">
+                </div>
+            </div>
+            <div class="block3">
+                <h3>Intersted</h3>
+                <div>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHOTOS</span>
+                    <span>WEB DESIGN</span>
+                    <span>GAME</span>
+                    <span>FOOD</span>
+                    <span>JAVASCRIPT</span>
+                    <span>ART</span>
+                </div>
+            </div>
+            <div class="block3" style="display: block;" id="block4">
+                <div><span onclick="del()"
+                        style=" text-align: center;color: rgb(156, 0, 0);padding: 0px 10px ;border: 0cap;margin: 0px;font-size: 30px;top: 0%;right: 0%; "><i
+                            class="fa-solid fa-xmark "></i></span>
+                    <p style="display: inline;">modi quae numquam dolor! Magnam voluptatibus a quaerat sequi pariatur
+                        asperiores, voluptates
+                        distinctio sapiente nemo iste?</p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="rside col-2">
+            <div class="r-block1">
+                <h3>Time In:</h3>
+                <div>
+                    <img src="image/images (1).jpeg" alt="" style="width: 75%;">
+                    <p style="margin-top:20px ;">Don't waste your time
+                    <p>
+                        <span id="second" style="color: rgb(0, 23, 199);">00</span>:<span id="tens"
+                            style="color: rgb(207, 0, 0);">00</span>
+                    </p>
+                    </p>
+                </div>
+                <div class="info">
+                    INFO
+                </div>
+            </div>
+
+            <div class="r-block1" style="display: block;" id="r-block1">
+                <h3>Friend Request</h3>
+                <div>
+                    <img src="image/avatar2.png" alt="">
+                    <p>Sara Husin</p>
+                </div>
+                <div>
+                    <span class="rite"><i class="fa-solid fa-check"></i></span>
+                    <span class="fal" onclick="delet()"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+
+            <div class="r-block1" style="display: block;" id="r-block2">
+                <h3>Friend Request</h3>
+                <div>
+                    <img src="image/avatar3.png" alt="">
+                    <p>Sead Gamal</p>
+                </div>
+                <div>
+                    <span class="rite"><i class="fa-solid fa-check"></i></span>
+                    <span class="fal" onclick="dele()"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+
+            <div class="r-block1" style="padding: 30px;">
+                ADS
+            </div>
+            <div class="r-block1" style="padding: 50px; font-size: 30px;">
+                <i class="fa-solid fa-bug"></i>
+            </div>
+        </div>
+
+
+
+        <div class="container col-8" id="container-pro" style="display: none;">
+            <div class="c-block1">
+                <div class="khalfia">
+                    <img src="image/nature (1).jpg" class="im-1">
+                    <img src="image/magdi1.jpg" class="im-2">
+                </div>
+                <div class="information">
+                    <div class="b-botton" style="margin-top:20px ;">
+                        <h4>information</h4>
+                        <div><i class="fa-solid fa-pen"></i> <span>Designer, UI</span></div>
+                        <div><i class="fa-solid fa-house"></i> <span> El-mehala, EGY</span></div>
+                        <div><i class="fa-solid fa-cake-candles"></i><span> April 1, 2000</span>
+                        </div>
+                    </div>
+                    <div id="t-gr" class="b-botton row" style="margin-top:20px ;">
+                        <h4>Friends</h4>
+                        <div class="col-4"><i class="fa-solid fa-circle-user"></i><span>ahmed saleh</span></div>
+                        <div class="col-4"><i class="fa-solid fa-circle-user"></i><span>fawzy khafagy</span></div>
+                        <div class="col-4"><i class="fa-solid fa-circle-user"></i><span>hazo gaber</span></div>
+                        <div class="col-4"><i class="fa-solid fa-circle-user"></i><span>ahmed saleh</span></div>
+                        <div class="col-4"><i class="fa-solid fa-circle-user"></i><span>fawzy khafagy</span></div>
+                        <div class="col-4"><i class="fa-solid fa-circle-user"></i><span>hazo gaber</span></div>
+                    </div>
+
+                    <div id="t-ph" class="t-gr" style="margin-top:20px;text-align: center;">
+                        <h3>Image</h3>
+                        <img src="image/magdi.jpeg" alt="">
+                        <img src="image/magdi1.jpg" alt="">
+                        <img src="image/magdi4.jpg" alt="">
+                        <img src="image/magdi3.jpg" alt="">
+                        <img src="image/magdi4.jpg" alt="">
+                        <img src="image/magdi5.jpg" alt="">
+                        <img src="image/magdi.jpeg" alt="">
+                        <img src="image/magdi1.jpg" alt="">
+                        <img src="image/magdi6.jpg" alt="">
+                    </div>
+                    <div id="t-ev" class="b-botton row"
+                        style="margin-top:20px;border-bottom: 1px solid #d3d2ea;padding-bottom: 20px;">
+                        <h4>Intersted</h4>
+                        <div class="col-6"><i class="fa-solid fa-graduation-cap"></i><span>Graduation</span></div>
+                        <div class="col-6"><i class="fa-solid fa-thumbtack"></i><span>Notes</span></div>
+                        <div class="col-6"><i class="fa-solid fa-plane"></i><span>Jurney</span></div>
+                        <div class="col-6"><i class="fa-solid fa-trophy"></i><span>winner</span></div>
+                    </div>
+                </div>
+                <div class="posts" style="margin-top:20px;text-align: center;">
+                    <div class="c-block2" style="margin:2px auto;margin-top: 30px;">
+                        <div class="row">
+                            <div class="col-6 m">
+                                <img src="image/magdi1.jpg" alt="">
+                                <h3>M.R Magdi</h3>
+                            </div>
+                            <div class="col-6 n" style="text-align: right;">1 min</div>
+                        </div>
+                        <div class="bod">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="row im">
+                                <video src="image/pexels_videos_1093662 (1080p).mp4" type="video/mp4" autoplay loop
+                                    muted plays-inline></video>
+                            </div>
+
+                            <div>
+                                <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                        class="num">1</span>
+                                    Like</div>
+                                <div
+                                    style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;">
+                                    <span class="num">5</span>
+                                    Comment
+                                </div>
+                            </div>
+
+                            <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                            <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                        </div>
+                    </div>
+                    <div class="c-block2" style="margin:2px auto; margin-top: 30px;">
+                        <div class="row">
+                            <div class="col-6 m">
+                                <img src="image/magdi1.jpg" alt="">
+                                <h3>M.R Magdi</h3>
+                            </div>
+                            <div class="col-6 n" style="text-align: right;">3 hour</div>
+                        </div>
+                        <div class="bod">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="row im" style="height: 500px;overflow: hidden;">
+                                <img src="image/magdi3.jpg" alt="">
+                            </div>
+
+                            <div>
+                                <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                        class="num">123</span>
+                                    Like</div>
+                                <div
+                                    style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;">
+                                    <span class="num">118</span>
+                                    Comment
+                                </div>
+                            </div>
+
+                            <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                            <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                        </div>
+                    </div>
+                    <div class="c-block2" style="margin:2px auto; margin-top: 30px;">
+                        <div class="row">
+                            <div class="col-6 m">
+                                <img src="image/magdi1.jpg" alt="">
+                                <h3>M.R Magdi</h3>
+                            </div>
+                            <div class="col-6 n" style="text-align: right;">18 hour</div>
+                        </div>
+                        <div class="bod">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="row im" style="height: 500px;overflow: hidden;">
+                                <img src="image/magdi5.jpg" alt="">
+                            </div>
+
+                            <div>
+                                <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                        class="num">153</span>
+                                    Like</div>
+                                <div
+                                    style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;">
+                                    <span class="num">18</span>
+                                    Comment
+                                </div>
+                            </div>
+
+                            <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                            <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                        </div>
+                    </div>
+                    <div class="c-block2" style="margin:2px auto; margin-top: 30px;">
+                        <div class="row">
+                            <div class="col-6 m">
+                                <img src="image/magdi1.jpg" alt="">
+                                <h3>M.R Magdi</h3>
+                            </div>
+                            <div class="col-6 n" style="text-align: right;">1 day</div>
+                        </div>
+                        <div class="bod">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+                            <div>
+                                <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                        class="num">123</span>
+                                    Like</div>
+                                <div
+                                    style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;">
+                                    <span class="num">118</span>
+                                    Comment
+                                </div>
+                            </div>
+
+                            <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                            <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container col-8 conte" id="container">
+            <div class="c-block1" style="display:block;">
+                <p>Social Media template by M.R perper</p>
+                <div>
+                    <input type="text" id="texting" placeholder="write a new post">
+                    <div style="display: inline-block;letter-spacing: 3px;text-align: center;">
+                        <div style="cursor: pointer;">
+
+                        </div>
+                        <div style="cursor: pointer;">
+                            <input type="color" name="" id="coloree"
+                                style="cursor: pointer;width:15px;height:15px;border:0px;display: none;">
+                            <label for="coloree" style="cursor: pointer;">color</label>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <button onclick="post()" class="bott"><i class="fa-solid fa-pen"></i><span>Post</span></button>
+            </div>
+
+            <div class="c-block2">
+                <div class="row">
+                    <div class="col-6 m">
+                        <img src="image/magdi1.jpg" alt="">
+                        <h3>M.R Magdi</h3>
+                    </div>
+                    <div class="col-6 n" style="text-align: right;">1 min</div>
+                </div>
+                <div class="bod">
+                    <p id="cop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="row im">
+                        <video src="image/pexels_videos_1093662 (1080p).mp4" type="video/mp4" autoplay loop muted
+                            plays-inline></video>
+                    </div>
+
+                    <div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span class="num"
+                                id="cln">1</span>
+                            Like</div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;"><span
+                                class="num">5</span>
+                            Comment</div>
+                    </div>
+
+                    <button class="like" id="cl"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                    <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+                    <button class="cupybest"><i class="fa-solid fa-copy "></i><span>copy text</span></button>
+                    <button class="reader"><i class="fa-solid fa-volume-high"></i><span>reader</span></button>
+                </div>
+            </div>
+            <div class="c-block2">
+                <div class="row">
+                    <div class="col-6 m">
+                        <img src="image/avatar3.png" alt="">
+                        <h3>D.Gurdiola</h3>
+                    </div>
+                    <div class="col-6 n" style="text-align: right;">2 min</div>
+                </div>
+                <div class="bod">
+                    <p id="magdi">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="row im">
+                        <img src="image/lights.jpg" alt="" class="col-6" style="width: 49%;">
+                        <img src="image/nature (1).jpg" alt="" class="col-6" style="width: 49%;">
+                    </div>
+                    <div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                class="num">14</span>
+                            Like</div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;"><span
+                                class="num">3</span>
+                            Comment</div>
+                    </div>
+
+                    <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                    <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                </div>
+            </div>
+            <div class="c-block2">
+                <div class="row">
+                    <div class="col-6 m">
+                        <img src="image/avatar3.png" alt="">
+                        <h3>Cap Salem</h3>
+                    </div>
+                    <div class="col-6 n" style="text-align: right;">5 min</div>
+                </div>
+                <div class="bod">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                class="num">8</span>
+                            Like</div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;"><span
+                                class="num">12</span>
+                            Comment</div>
+                    </div>
+
+                    <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                    <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+                </div>
+            </div>
+            <div class="c-block2">
+                <div class="row">
+                    <div class="col-6 m">
+                        <img src="image/avatar6.png" alt="">
+                        <h3>Marwa Mohamed</h3>
+                    </div>
+                    <div class="col-6 n" style="text-align: right;">18 min</div>
+                </div>
+                <div class="bod">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="row im">
+                        <img src="image/lights.jpg" alt="" class="col" style="width: 95%;">
+                    </div>
+                    <p>have you seen this before....?</p>
+                    <div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                class="num">16</span>
+                            Like</div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;"><span
+                                class="num">5</span>
+                            Comment</div>
+                    </div>
+
+                    <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                    <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                </div>
+            </div>
+            <div class="c-block2">
+                <div class="row">
+                    <div class="col-6 m">
+                        <img src="image/avatar3.png" alt="">
+                        <h3>Wael Mohamed</h3>
+                    </div>
+                    <div class="col-6 n" style="text-align: right;">23 min</div>
+                </div>
+                <div class="bod">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="row im">
+                        <img src="image/nature (1).jpg" alt="" class="col" style="width: 95%;">
+                    </div>
+                    <p>this is impossibol....?</p>
+                    <div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                class="num">217</span>
+                            Like</div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;"><span
+                                class="num">502</span>
+                            Comment</div>
+                    </div>
+
+                    <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                    <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                </div>
+            </div>
+            <div class="c-block2">
+                <div class="row">
+                    <div class="col-6 m">
+                        <img src="image/magdi1.jpg" alt="">
+                        <h3>M.R Magdi</h3>
+                    </div>
+                    <div class="col-6 n" style="text-align: right;">3 hour</div>
+                </div>
+                <div class="bod">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="row im" style="height: 500px;overflow: hidden;">
+                        <img src="image/magdi3.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                class="num">1</span>
+                            Like</div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;">
+                            <span class="num">5</span>
+                            Comment
+                        </div>
+                    </div>
+
+                    <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                    <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                </div>
+            </div>
+            <div class="c-block2">
+                <div class="row">
+                    <div class="col-6 m">
+                        <img src="image/avatar2.png" alt="">
+                        <h3>Fathy Perper</h3>
+                    </div>
+                    <div class="col-6 n" style="text-align: right;">5 hour</div>
+                </div>
+                <div class="bod">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, enim. Quos neque ab id quae
+                        accusantium eveniet amet facilis, explicabo possimus nostrum vel dolorem expedita enim hic
+                        itaque est laborum.</p>
+                    <div class="row im">
+                        <img src="image/lights.jpg" alt="" class="col-6" style="width: 49%;">
+                        <img src="image/magdi1.jpg" alt="" class="col-6" style="width: 49%;">
+                    </div>
+                    <div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;"><span
+                                class="num">2</span>
+                            Like</div>
+                        <div style="color: rgb(0, 4, 77);font-size: 17px;display: inline-block;margin-left: 20px;"><span
+                                class="num">5</span>
+                            Comment</div>
+                    </div>
+
+                    <button class="like"><i class="fa-solid fa-thumbs-up "></i><span>Like</span></button>
+                    <button><i class="fa-solid fa-comment "></i><span>Comment</span></button>
+
+                </div>
+            </div>
+        </div>
+
+        <footer>Check Your Internet Accese ....!</footer>
+    </div>
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
